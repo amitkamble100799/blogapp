@@ -306,7 +306,7 @@ function Home() {
 
 </div>
 <hr className='hstories'/>
-<p className='view'>View More<img src={arrowl} alt='Not found/> </p>
+<p className='view'>View More<img src={arrowl} alt='Not found'/> </p>
     </div>
     </>
   )
