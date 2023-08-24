@@ -10,7 +10,7 @@ function Bollywood() {
     <div className='Mainc'>
       <div className='seccnt'>
         <h1 className='b1'>Bollywood</h1>
-       {DData.filter((item)=>item.cat==='Bollywood').map((data,bolly)=>{
+       {DData.filter((item)=>(item.cat==='Bollywood') && (item.id<13)).map((data,bolly)=>{
             return(
                 <>
               
@@ -33,7 +33,7 @@ function Bollywood() {
         })
 
         } 
-        <p><span > Load More</span><img className='d' src={arrowr} alt='Not Found'/></p>
+        <p><span > Load More</span><img className='d' src={arrowr}/></p>
       
         </div>
         <div className='seccnt'>
@@ -111,6 +111,69 @@ function Bollywood() {
                 <span className='ds'>{data.date}</span>
                 </div>
                 <div id='number'><span  className='number'>4</span></div>
+
+             
+      </div>
+    )
+   
+
+  })
+}
+<hr/>
+        {
+  DData.filter((item)=>item.id===4).map((data,ind)=>{
+    return(
+      <div className='short' key={ind}>
+        <div className='bsimg'>
+         <img className='bsimg1' src={data.image} alt='Not Found'/>
+         </div>
+         <div className='bdsc2'>
+                <h3 className='bsh'>{data.Heading}</h3> 
+                <span className='ds'>{data.date}</span>
+                </div>
+                <div id='number'><span  className='number'>5</span></div>
+
+             
+      </div>
+    )
+   
+
+  })
+}
+<hr/>
+        {
+  DData.filter((item)=>item.id===14).map((data,ind)=>{
+    return(
+      <div className='short' key={ind}>
+        <div className='bsimg'>
+         <img className='bsimg1' src={data.image} alt='Not Found'/>
+         </div>
+         <div className='bdsc2'>
+                <h3 className='bsh'>{data.Heading}</h3> 
+                <span className='ds'>{data.date}</span>
+                </div>
+                <div id='number'><span  className='number'>6</span></div>
+
+             
+      </div>
+    )
+   
+
+  })
+}
+<hr/>
+        {
+  DData.filter((item)=>item.id===13).map((data,ind)=>{
+    return(
+      <div className='short' key={ind}>
+        <div className='bsimg'>
+         <img className='bsimg1' src={data.image} alt='Not Found'/>
+         </div>
+         <div className='bdsc2'>
+                <h3 className='bsh'>{data.Heading}</h3> 
+                <span className='ds'>{data.date}</span>
+                </div>
+                <div id='number'><span  className='number'>7</span></div>
 
              
       </div>
