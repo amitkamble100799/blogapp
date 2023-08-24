@@ -1,5 +1,4 @@
 /* Lnkcmp css*/
-
 .hdl{
   display: flex;
   justify-content: center;
@@ -79,13 +78,13 @@ margin-top: 80px;
 .title1{
   position: absolute;
   top: 20vw;
-  left: 68vw;
+  left: 63vw;
   color: rgb(189, 187, 184);
 }
 .title2{
   position: absolute;
   top: 38vw;
-  left: 68vw;
+  left: 63vw;
   color: rgb(201, 200, 197);
 }
 .hmain1{
@@ -103,6 +102,7 @@ gap: 60px;
   width: 200px;
   font-size: 18px;
   font-weight: bold;
+  height: 40px;
 }
 .bdsc{
   display: flex;
@@ -127,7 +127,8 @@ gap: 60px;
 }
 .bsimg1{
   margin-top: 20px;
-  width: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .homemain{
@@ -183,6 +184,7 @@ gap: 60px;
   width: 600px;
   height: 200px;
 }
+
 .bcontainer1{
   display: flex;
   gap: 20px;
@@ -225,7 +227,14 @@ gap: 60px;
 .shorthome{
   display: flex;
   width: 24vw;
-  height: 180px;
+  height: 300px;
+  
+}
+.short{
+  display: flex;
+  justify-content: center;
+  height: 220px;
+  align-items: center;
 }
 .hmain3{
   display: flex;
@@ -256,8 +265,9 @@ gap: 20px;
 .Adds{
   border: 2px solid rgba(155, 148, 148, 0.638);
   display: flex;
-  width: 300px;
-  height: 600px;
+  margin-top: 10%;
+  width: 400px;
+  height: 800px;
  font-size: 28px;
  font-weight: bold;
   align-items: center;
@@ -406,6 +416,9 @@ margin-bottom: 20px;
       }
       /* Home css*/ 
       
+      .title{
+        top: 70%;
+      }
     .bcontainer{
       width: 90vw;
       height: 200px;
@@ -666,6 +679,7 @@ width: 100%;
         width: 90%;
       }
       .bsimg{
+        margin-top: 45%;
         width: 95%;
         height: 250px;
       }
@@ -682,6 +696,7 @@ width: 100%;
         display: flex;
         width: 90%;
       }
+    
 }
 /*tab*/
 @media only screen and (min-width: 600px) and (max-width:1000px) {
@@ -927,8 +942,8 @@ display: none;
     width: 90vw;
   }
   .title{
-   top: 97%;
-   font-size: 0.9em;
+   top: 102%;
+   font-size: 0.8em;
     opacity: 1;
     color: rgb(227, 222, 216);
   }
