@@ -10,7 +10,7 @@ function Hollywood() {
     <div className='Mainc'>
     <div className='seccnt'>
       <h1 className='b1'>Hollywood</h1>
-     {DData.filter((item)=>item.cat==='Hollywood').map((data,bolly)=>{
+     {DData.filter((item)=>(item.cat==='Hollywood') && (item.id>=19)).map((data,bolly)=>{
           return(
               <>
             
@@ -33,7 +33,7 @@ function Hollywood() {
       })
 
       } 
-     <p><span > Load More</span><img className='d' src={arrowr} alt='Not Found'/></p>
+     <p><span > Load More</span><img className='d' src={arrowr}/></p>
       </div>
       <div className='seccnt'>
         <h1  className='b1'>Top Posts</h1>
@@ -118,6 +118,48 @@ DData.filter((item)=>item.id===70).map((data,ind)=>{
 
 })
 }
+<hr/>
+      {
+DData.filter((item)=>item.id===24).map((data,ind)=>{
+  return(
+    <div className='short' key={ind}>
+      <div className='bsimg'>
+       <img className='bsimg1' src={data.image} alt='Not Found'/>
+       </div>
+       <div className='bdsc2'>
+              <h3 className='bsh'>{data.Heading}</h3> 
+              <span className='ds'>{data.date}</span>
+              </div>
+              <div id='number'><span  className='number'>5</span></div>
+
+           
+    </div>
+  )
+ 
+
+})
+}
+<hr/>
+      {
+DData.filter((item)=>item.id===23).map((data,ind)=>{
+  return(
+    <div className='short' key={ind}>
+      <div className='bsimg'>
+       <img className='bsimg1' src={data.image} alt='Not Found'/>
+       </div>
+       <div className='bdsc2'>
+              <h3 className='bsh'>{data.Heading}</h3> 
+              <span className='ds'>{data.date}</span>
+              </div>
+              <div id='number'><span  className='number'>6</span></div>
+
+           
+    </div>
+  )
+ 
+
+})
+} 
 <div className='Adds'>
 Advertisement
 </div>
